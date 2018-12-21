@@ -1,0 +1,43 @@
+.logo
+	.container
+		margin-top: 1rem
+		.row
+			.col
+				display: flex
+				justify-content: center
+				align-items: center
+				figure 
+					text-align: center
+					img 
+						width: 40%
+				nav
+					ul 
+						padding: 0
+						li 
+							position: relative
+							list-style-type: none
+							display: inline-block
+							margin: 5px
+							a
+								color: silver
+								text-decoration: none
+								font-weight: bold
+								text-shadow: 1px 1px 1px grey
+							&:before
+								display: block
+								content: ""
+								position: absolute
+								bottom: 0
+								left: 50%
+								transform: translateX(-50%)
+								width: 11px
+								height: 3px
+								background: #f1c40f
+								transition: .5s all ease-in-out
+							+media-breakpoint-up(md)
+								&:before
+									opacity: 0
+								&:hover
+									&:before
+										opacity: 1
+							

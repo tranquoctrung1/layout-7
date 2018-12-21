@@ -1,0 +1,70 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.banner.mb-4
+		.owl-carousel.owl-theme
+			-for(i=0; i<=3;i++)
+				.item.text-center
+					img.img-fluid(src="./img/home_banner.png", alt="")
+					.content
+						h3 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati excepturi, nihil amet possimus fugit, modi ab optio similique voluptas dolorum porro molestiae beatae nam deleniti, et facilis. Ut, a nemo!
+						button.mr-5 VIEW MORE
+						button VIEW MORE
+	section.pro.mb-3
+		.tittle.text-center
+			h3 BÁN CHẠY
+		.container.pro.mt-5
+			.row.text-center
+				-for(i = 1;i<=4;i++)
+					.col-md-3
+						figure
+							.box
+								img.img-fluid(src="./img/pro"+i+".png", alt="", srcset="")
+							ficaption
+								p.pb-4.pl-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas itaque placeat dolorum s
+								.price
+									.row
+										.col-8
+											price.vnd.pl-2 300.000đ
+										.col-2
+											price.dola
+												strong $30
+								i.fa.fa-heart
+	section.intro.mb-4
+		.container
+			.row
+				.col-md-3
+					img.ngoctrinh1.img-fluid(src="./img/intro1.png", alt="", srcset="")
+				.col-md-6.ngoctrinh.mb-5.mt-4
+					.owl-carousel.owl-theme
+						-for(i = 0 ; i < 4;i++)
+							.item
+								h3.mb-4 Lorem ipsum dolor sit amet 	
+								p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam aspernatur, ex nostrum, incidunt consequatur odio doloribus unde.
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio perferendis laborum 
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio perferendis laborum 
+				.col-md-3
+					img.ngoctrinh2.img-fluid(src="./img/intro2.png", alt="", srcset="")
+	section.slider.mb-4
+		.container
+			.row
+				.col
+					.owl-carousel.owl-theme
+						-for(i = 1;i<=6;i++)
+							.item
+								.row
+									.col-4.pr-0
+										img.img-fluid(src="./img/intro3.png", alt="", srcset="")
+									.col-8.pl-0.text-right
+										h5.mb-3 Lorem ipsum dolor sit, amet consectetur
+										p SEO
+										name Trần Quốc Trung

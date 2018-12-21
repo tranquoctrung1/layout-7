@@ -1,0 +1,271 @@
+body
+	.banner
+		position: relative
+		.owl-carousel
+			.item
+			.content
+				h3 
+					color: blue
+					margin: 1rem 0
+					position: relative
+					&:before
+						display: block
+						content: ""
+						width: 30px
+						height: 3px
+						background: orange
+						position: absolute
+						right: 50%
+						bottom: -3px
+					+media-breakpoint-up(md)
+						font-size: 20px
+				p 
+					color: gray 
+					margin-top: 1rem
+					+media-breakpoint-up(md)
+						font-size: 13px
+				button
+					font-weight: bold
+					padding: 1rem 2rem
+					background: blue
+					border-radius: 10px 5px 5px 5px
+					border: none
+					font-size: 10px
+					color: white
+					+media-breakpoint-up(md)
+						&:hover
+							background: transparent
+							color: blue
+							border: 1px solid orange
+				+media-breakpoint-up(md)
+					width: 40%
+					position: absolute
+					transform: translateY(25%)
+					height: 100%
+					top: 0
+					right: 20px
+					text-align: right
+					h3 
+						&:before
+							right: 0
+			.owl-nav
+				.owl-prev
+					i 
+						padding: 1rem
+						background: blue
+						color: white
+						font-weight: bold
+						border-radius: 15px 5px 5px 5px
+				.owl-next
+					i 
+						padding: 1rem
+						background: blue
+						color: white
+						font-weight: bold
+						border-radius: 5px 5px 15px 5px
+			.owl-dots
+				position: absolute
+				right: 10px
+				bottom: 0
+				button
+					span
+						padding: 7px
+						border-radius: 8px 3px 3px 3px
+						background: blue
+					&.owl-dot.active
+						span 
+							padding: 7px
+							border-radius: 3px 3px 8px 3px
+							background: blue
+	.pro
+		.tittle
+			h3
+				font-weight: bolder
+				color: #2980b9
+				position: relative
+				&:before
+					position: absolute
+					content: ""
+					display: block
+					height: 5px 
+					width: 40px
+					bottom: -5px
+					left: 50%
+					transform: translateX(-50%)
+					background: orange
+	.container.pro
+		.row
+			.col-md-3
+				figure
+					position: relative
+					transition: 1s all ease-in-out
+					ficaption
+						p
+							color: blue
+							position: relative
+							font-weight: bold
+							transition: 1s all ease-in-out
+							&:before
+								position: absolute
+								content: ""
+								display: block
+								width: 30px
+								height: 3px
+								bottom: 10px
+								left: 50%
+								transform: translateX(-50%)
+								background: orange
+								transition: 1s all ease-in-out
+						.price
+							.vnd
+								color: gray
+						i
+							position: absolute
+							top: 10px
+							right: 10px
+							font-size: 15px
+							color: blue
+					+media-breakpoint-up(md)
+						ficaption
+							text-align: left
+							p 
+								color: gray 
+								font-size: 13px
+								&:before
+									left: 5px
+									transform: translateX(0)
+									background: gray 
+						&:hover
+							border-radius: 5px 15px 5px 5px 
+							box-shadow: 0 0 5px 5px #8080805c
+							padding-top: 1rem
+							.box
+								img 
+									border-radius: 5px 15px 5px 5px
+							ficaption
+								p 
+									color: blue
+									&:before
+										background: orange
+								.price
+									.dola
+										strong
+											color: orange
+	.intro
+		.container
+			.row
+				position: relative
+				background: #ffeaa7
+				border-radius: 50px 0 50px 0
+				.col-md-3
+					img 
+						&.ngoctrinh1
+							border-radius: 5px 30px 5px 5px
+						&.ngoctrinh2
+							border-radius: 5px 0 0 30px
+							filter: grayscale(100%)
+						+media-breakpoint-up(md)
+							&.ngoctrinh1
+								position: absolute
+								left: -20px
+								bottom: 0
+								width: 60%
+							&.ngoctrinh2
+								position: absolute
+								right: -40px
+								top: -10px
+								width: 60%
+				.ngoctrinh
+					.owl-carousel
+						.owl-nav
+							display: flex
+							justify-content: flex-start
+							align-items: center
+							.owl-prev
+								i 
+									padding: 1rem
+									background: blue
+									color: white
+									font-weight: bold
+									border-radius: 15px 5px 5px 5px
+							.owl-next
+								i 
+									padding: 1rem
+									background: blue
+									color: white
+									font-weight: bold
+									border-radius: 5px 5px 15px 5px
+
+					.item
+						h3 
+							color: blue
+							position: relative
+							&:before
+								position: absolute
+								display: block
+								content: ""
+								height: 3px
+								width: 20px
+								bottom: -5px
+								left: 0
+								background: orange
+						p 
+							color: gray 
+	.slider
+		position: relative
+		.container
+			.row
+				.col
+					.owl-carousel
+						.owl-nav
+							.owl-prev
+								i 
+									padding: 1rem
+									background: blue
+									color: white
+									font-weight: bold
+									border-radius: 15px 5px 5px 5px
+							.owl-next
+								i 
+									padding: 1rem
+									background: blue
+									color: white
+									font-weight: bold
+									border-radius: 5px 5px 15px 5px
+							+media-breakpoint-up(md)
+								.owl-prev
+									position: absolute
+									top: 50%
+									left: -50px
+									transform: translateY(-50%)
+								.owl-next
+									position: absolute
+									top: 50%
+									right: -50px
+									transform: translateY(-50%)
+
+						.item
+							.row
+								.col-4
+									clip-path: polygon(38% 0, 100% 0, 100% 20%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0 30%)
+								.col-8
+									h5 
+										color: blue
+										position: relative
+										&:before
+											position: absolute
+											content: ""
+											display: block
+											bottom: -5px
+											right: 0
+											width: 15px
+											height: 3px
+											background: orange
+
+
+									p 
+										color: #b2bec3
+										font-weight: bold
+									name 
+										color: #636e72
+										font-weight: bolder

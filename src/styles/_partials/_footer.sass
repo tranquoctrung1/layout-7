@@ -1,0 +1,64 @@
+/////////////////////////////////
+// Phần Slider
+/////////////////////////////////
+.footer
+	.container
+		padding: 2rem
+		background: #ecf0f1
+		position: relative
+		.row
+			.col-md-4
+				text-shadow: 1px 1px 1px gray
+				margin-bottom: 1rem
+				img 
+					width: 40%
+				.fontawesome
+					i
+						margin: 5px
+						padding: 10px
+						background: #2980b9
+						color: white
+						border-radius: 15px 5px 5px 5px
+						+media-breakpoint-up(md)
+							color: lighten(#95a5a6,50%)
+							background: #95a5a6
+							&:hover
+								background: #2980b9
+								color: white
+				h6 
+					color: #3498db
+					position: relative
+					margin-bottom: 1rem
+					&:before
+						display: block
+						content: ""
+						height: 3px
+						width: 1rem
+						position: absolute
+						background: #e67e22
+						bottom: -5px
+						left: 50%
+						transform: translateX(-50%)
+				p 
+					color: #95a5a6
+				+media-breakpoint-up(md)
+					text-align: left
+					h6 
+						&:before
+							left: 0
+							transform: translateX(0)
+			.col.copyright
+				.copyright
+					background: #81ecec
+					border-top-left-radius: 20px
+					padding: 1rem 0
+				+media-breakpoint-up(md)
+					display: flex
+					justify-content: flex-end
+					align-items: center
+					.copyright
+						position: absolute
+						bottom: -28px
+						right: -12px
+						width: 22rem
+
